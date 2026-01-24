@@ -1,0 +1,12 @@
+{
+    "test123": {
+        "nome": "Laura Scagnellato",
+        "posti": 1,
+        "messaggio": "Forse funziona"
+    },
+    "test456": {
+        "nome": "Antonio Collesei",
+        "posti": 2,
+        "messaggio": "Due persone: funziona"
+    }
+}

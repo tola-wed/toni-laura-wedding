@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Il tuo invito</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>🎟️ Inserisci il tuo codice</h1>
+
+    <input type="text" id="codice" placeholder="Codice segreto">
+    <button onclick="verificaCodice()">Scopri il tuo invito</button>
+
+    <div id="invito" class="hidden">
+        <h2>Ciao <span id="nome"></span>!</h2>
+        <p>Sei invitato con <strong><span id="posti"></span></strong> posto/i.</p>
+        <p id="messaggio"></p>
+        <button onclick="window.print()">Scarica / Stampa invito</button>
+    </div>
+
+    <script src="js/inviti.js"></script>
+</body>
+
+</html>
