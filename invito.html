@@ -3,22 +3,47 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Il tuo invito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il tuo invito - Toni & Laura</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <h1>🎟️ Inserisci il tuo codice</h1>
+    <div class="container" style="justify-content: center; align-items: center; min-height: 80vh;">
 
-    <input type="text" id="codice" placeholder="Codice segreto">
-    <button onclick="verificaCodice()">Scopri il tuo invito</button>
+        <header style="padding-top: 0;">
+            <h1>🎟️ Il tuo invito</h1>
+            <p>Inserisci il codice che hai ricevuto per scoprire i dettagli.</p>
+        </header>
 
-    <div id="invito" class="hidden">
-        <h2>Ciao <span id="nome"></span>!</h2>
-        <p>Sei invitato con <strong><span id="posti"></span></strong> posto/i.</p>
-        <p id="messaggio"></p>
-        <button onclick="window.print()">Scarica / Stampa invito</button>
+        <section style="width: 100%; max-width: 500px; text-align: center;">
+            <div style="margin-bottom: 1.5rem;">
+                <input type="text" id="codice" placeholder="Inserisci il tuo codice segreto..."
+                    style="text-align: center; font-size: 1.2rem;">
+            </div>
+            <button onclick="verificaCodice()" style="width: 100%;">Scopri il tuo invito</button>
+        </section>
+
+        <section id="invito" class="hidden"
+            style="width: 100%; max-width: 600px; text-align: center; border: 2px solid var(--color-secondary); background: #fff;">
+            <h2 style="margin-top: 0;">Benvenuto, <span id="nome" style="color: var(--color-primary);"></span>!</h2>
+            <div style="margin: 2rem 0; font-size: 1.3rem;">
+                <p>Siamo felicissimi di averti con noi.</p>
+                <p>Posti riservati: <strong><span id="posti"
+                            style="font-size: 2rem; color: var(--color-accent);"></span></strong></p>
+            </div>
+            <p id="messaggio" style="font-style: italic; color: #666;"></p>
+            <div style="margin-top: 2rem; border-top: 1px dashed #ccc; padding-top: 1rem;">
+                <button onclick="window.print()" style="background-color: var(--color-text); font-size: 0.9rem;">🖨️
+                    Scarica / Stampa</button>
+            </div>
+        </section>
+
+        <nav>
+            <a href="index.html">← Torna alla Home</a>
+        </nav>
+
     </div>
 
     <script src="js/inviti.js"></script>
