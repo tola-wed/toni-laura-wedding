@@ -4,49 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Il tuo invito - Toni & Laura</title>
+    <title>Il tuo Pass VIP - Toni & Laura</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <div class="container" style="justify-content: center; align-items: center; min-height: 80vh;">
+    <div class="container" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
 
-        <header style="padding-top: 0;">
-            <h1>🎟️ Il tuo invito</h1>
-            <p>Inserisci il codice che hai ricevuto per scoprire i dettagli.</p>
+        <header style="padding-top: 0; padding-bottom: 1rem;">
+            <h1>🎟️ Area VIP</h1>
+            <p>Solo per gente giusta.</p>
         </header>
 
-        <section style="width: 100%; max-width: 500px; text-align: center;">
-            <div style="margin-bottom: 1.5rem;">
-                <input type="text" id="codice" placeholder="Inserisci il tuo codice segreto..."
-                    style="text-align: center; font-size: 1.2rem;">
+        <section style="max-width: 500px; margin: 0 auto;">
+            <div style="margin-bottom: 2rem; text-align: center;">
+                <label for="codice" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Parola
+                    d'ordine:</label>
+                <input type="text" id="codice" placeholder="Scrivila qui..." autocomplete="off">
             </div>
-            <button onclick="verificaCodice()" style="width: 100%;">Scopri il tuo invito</button>
+            <button onclick="verificaCodice()">Sblocca Invito 🔓</button>
         </section>
 
         <section id="invito" class="hidden"
-            style="width: 100%; max-width: 600px; text-align: center; border: 2px solid var(--color-secondary); background: #fff;">
-            <h2 style="margin-top: 0;">Benvenuto, <span id="nome" style="color: var(--color-primary);"></span>!</h2>
-            <div style="margin: 2rem 0; font-size: 1.3rem;">
-                <p>Siamo felicissimi di averti con noi.</p>
-                <p>Posti riservati: <strong><span id="posti"
-                            style="font-size: 2rem; color: var(--color-accent);"></span></strong></p>
+            style="max-width: 600px; margin: 2rem auto; border: 4px dashed #ff9a9e; background: #fff;">
+            <h2 style="margin-top: 0; color: #ff6b6b;">Ciao <span id="nome"></span>! 👋</h2>
+            <div style="margin: 2rem 0; font-size: 1.3rem; text-align: center;">
+                <p>Sei ufficialmente dei nostri!</p>
+                <div
+                    style="background: #e0f7fa; padding: 1rem; border-radius: 15px; display: inline-block; margin-top: 1rem;">
+                    Posti riservati: <strong><span id="posti" style="font-size: 2rem; color: #00bcd4;"></span></strong>
+                </div>
             </div>
-            <p id="messaggio" style="font-style: italic; color: #666;"></p>
-            <div style="margin-top: 2rem; border-top: 1px dashed #ccc; padding-top: 1rem;">
-                <button onclick="window.print()" style="background-color: var(--color-text); font-size: 0.9rem;">🖨️
-                    Scarica / Stampa</button>
+            <p id="messaggio" style="font-style: italic; color: #666; text-align: center;"></p>
+            <div style="margin-top: 2rem; text-align: center;">
+                <button onclick="window.print()" style="width: auto; font-size: 1rem; padding: 0.5rem 1.5rem;">🖨️
+                    Stampa Memento</button>
             </div>
         </section>
 
         <nav>
-            <a href="index.html">← Torna alla Home</a>
+            <a href="index.html">🔙 Home</a>
         </nav>
 
     </div>
 
     <script src="js/inviti.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

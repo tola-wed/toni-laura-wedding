@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toni & Laura - Ci sposiamo! 🎉</title>
+    <title>Toni & Laura - Finalmente! 🎉</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="description" content="Toni e Laura si sposano! Dettagli su data, luogo e programma del matrimonio.">
 </head>
@@ -13,44 +13,59 @@
 
     <div class="container">
         <header>
+            <img src="img/header.png" alt="Just Married" class="header-img">
             <h1>Ci sposiamo! 💍</h1>
-            <p>Finalmente. Sì, anche noi siamo sorpresi.</p>
+            <p>Sì, è vero. Non è uno scherzo.</p>
         </header>
 
-        <section>
-            <h2>📍 Dove & Quando</h2>
-            <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
-                <p><strong>Data:</strong> 12 Luglio 2026</p>
-                <p><strong>Luogo:</strong> Villa Bellissima, Roma</p>
+        <section class="text-center">
+            <h2>� Chi siamo?</h2>
+            <div class="who-container">
+                <div class="person-card">
+                    <img src="img/toni.png" alt="Toni" class="avatar">
+                    <h3>Toni</h3>
+                    <p>"Sono qui solo per la torta."</p>
+                </div>
+                <div class="person-card">
+                    <img src="img/laura.png" alt="Laura" class="avatar">
+                    <h3>Laura</h3>
+                    <p>"Sono qui perché lui è qui."</p>
+                </div>
             </div>
         </section>
 
         <section>
-            <h2>🕒 Programma</h2>
+            <h2>📍 Dove & Quando</h2>
+            <div style="text-align: center;">
+                <p>📅 <strong>12 Luglio 2026</strong></p>
+                <p>📍 <strong>Villa Bellissima, Roma</strong></p>
+                <p style="font-size: 0.9rem; margin-top: 1rem;">(Non perdetevi, usate il GPS!)</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>🕒 Il Piano (circa)</h2>
             <ul>
-                <li><strong>16:00</strong> – Arrivo e benvenuto</li>
-                <li><strong>16:30</strong> – Cerimonia emozionante (speriamo)</li>
-                <li><strong>18:00</strong> – Festa, cibo e balli 🕺</li>
+                <li><strong>16:00</strong> Arrivo (puntuali, dai!)</li>
+                <li><strong>16:30</strong> La parte seria 💍</li>
+                <li><strong>18:00</strong> Cibo, vino e balli imbarazzanti 🕺</li>
             </ul>
         </section>
 
         <section>
-            <h2>🎬 Video importantissimi</h2>
+            <h2>🎬 Trailer Epico</h2>
             <div
-                style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px; margin-top: 1rem;">
+                style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 20px; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <!-- Placeholder for actual video ID -->
                 <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Matrimonio"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen>
                 </iframe>
             </div>
-            <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; opacity: 0.8;">(Esempio video)</p>
         </section>
 
         <nav>
-            <a href="rsvp.html">RSVP</a>
-            <span style="color: var(--color-secondary)">•</span>
-            <a href="invito.html">Il tuo invito</a>
+            <a href="rsvp.html">✍️ RSVP</a>
+            <a href="invito.html">🎟️ Il tuo Pass</a>
         </nav>
     </div>
 
