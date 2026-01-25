@@ -10,41 +10,48 @@
 
 <body>
 
-    <div class="container" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center;">
+    <div class="container"
+        style="min-height: 90vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
 
-        <header style="padding-top: 0; padding-bottom: 1rem;">
-            <h1>🎟️ Area VIP</h1>
-            <p>Solo per gente giusta.</p>
+        <header style="margin-bottom: 2rem; text-align: center;">
+            <h1>Area VIP 🎟️</h1>
+            <p style="color: var(--color-primary-dark); font-weight: 600;">Solo per i veri amici (e parenti obbligati).
+            </p>
         </header>
 
-        <section style="max-width: 500px; margin: 0 auto;">
-            <div style="margin-bottom: 2rem; text-align: center;">
-                <label for="codice" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Parola
+        <section style="width: 100%; max-width: 500px; text-align: center;">
+            <div style="margin-bottom: 2rem;">
+                <label for="codice"
+                    style="display: block; margin-bottom: 0.5rem; font-weight: bold; color: var(--color-primary-dark);">Parola
                     d'ordine:</label>
-                <input type="text" id="codice" placeholder="Scrivila qui..." autocomplete="off">
+                <input type="text" id="codice" placeholder="Es. gatti123"
+                    style="width: 100%; padding: 1rem; border-radius: 50px; border: 2px solid #e056fd; text-align: center; font-size: 1.2rem;">
             </div>
-            <button onclick="verificaCodice()">Sblocca Invito 🔓</button>
+            <button onclick="verificaCodice()" class="btn-primary" style="width: 100%; margin: 0;">Sblocca Invito
+                🔓</button>
         </section>
 
+        <!-- Hidden Invite Card -->
         <section id="invito" class="hidden"
-            style="max-width: 600px; margin: 2rem auto; border: 4px dashed #ff9a9e; background: #fff;">
-            <h2 style="margin-top: 0; color: #ff6b6b;">Ciao <span id="nome"></span>! 👋</h2>
-            <div style="margin: 2rem 0; font-size: 1.3rem; text-align: center;">
+            style="width: 100%; max-width: 600px; margin-top: 2rem; text-align: center; border: 3px dashed var(--color-primary);">
+            <h2 style="margin-top: 0; color: var(--color-primary);">Ciao <span id="nome"></span>! 👋</h2>
+
+            <div style="background: rgba(155, 89, 182, 0.1); padding: 1.5rem; border-radius: 15px; margin: 1.5rem 0;">
                 <p>Sei ufficialmente dei nostri!</p>
-                <div
-                    style="background: #e0f7fa; padding: 1rem; border-radius: 15px; display: inline-block; margin-top: 1rem;">
-                    Posti riservati: <strong><span id="posti" style="font-size: 2rem; color: #00bcd4;"></span></strong>
-                </div>
+                <p style="font-size: 1.2rem; margin-top: 0.5rem;">Posti riservati: <strong><span id="posti"
+                            style="font-size: 2.5rem; color: var(--color-secondary);"></span></strong></p>
             </div>
-            <p id="messaggio" style="font-style: italic; color: #666; text-align: center;"></p>
-            <div style="margin-top: 2rem; text-align: center;">
-                <button onclick="window.print()" style="width: auto; font-size: 1rem; padding: 0.5rem 1.5rem;">🖨️
-                    Stampa Memento</button>
+
+            <p id="messaggio" style="font-style: italic; color: #555;"></p>
+
+            <div style="margin-top: 2rem;">
+                <button onclick="window.print()" class="btn-primary"
+                    style="font-size: 0.9rem; padding: 0.8rem 2rem;">🖨️ Stampa Memento</button>
             </div>
         </section>
 
         <nav>
-            <a href="index.html">🔙 Home</a>
+            <a href="index.html">🔙 Torna alla Home</a>
         </nav>
 
     </div>

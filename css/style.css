@@ -1,21 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600;700&display=swap');
 
 :root {
-    --color-bg-start: #fff1eb;
-    --color-bg-end: #ace0f9;
-    --color-card-bg: rgba(255, 255, 255, 0.9);
-    --color-text: #4a4a4a;
-    --color-accent-1: #ff9a9e;
-    /* Soft Red/Pink */
-    --color-accent-2: #fecfef;
-    /* Light Pink */
-    --color-accent-3: #a1c4fd;
-    /* Soft Blue */
-    --font-heading: 'Fredoka One', cursive;
-    --font-body: 'Quicksand', sans-serif;
+    /* Purple Palette */
+    --color-primary: #9b59b6;
+    /* Wisteria */
+    --color-primary-dark: #8e44ad;
+    --color-secondary: #e056fd;
+    /* Heliotrope */
+    --color-accent: #f8c291;
+    /* Melon - warm offset */
 
-    --shadow-soft: 0 10px 25px rgba(166, 171, 189, 0.5);
-    --radius-blob: 25px;
+    --color-bg-start: #f3e5f5;
+    /* Very Light Purple */
+    --color-bg-end: #e1bee7;
+    /* Light Purple */
+
+    --color-text: #2c3e50;
+    --color-text-light: #ffffff;
+
+    --font-heading: 'Fredoka One', cursive;
+    --font-body: 'Open Sans', sans-serif;
+
+    --shadow-soft: 0 10px 25px rgba(155, 89, 182, 0.2);
+    --shadow-hover: 0 15px 35px rgba(155, 89, 182, 0.4);
+
+    --radius-lg: 20px;
+    --radius-xl: 40px;
 }
 
 * {
@@ -38,33 +48,32 @@ h1,
 h2,
 h3 {
     font-family: var(--font-heading);
-    color: var(--color-text);
     margin-bottom: 0.5rem;
-    letter-spacing: 0.05em;
-    text-shadow: 2px 2px 0px white;
+    color: var(--color-primary-dark);
 }
 
 h1 {
-    font-size: 3rem;
-    color: #ff6b6b;
-    transform: rotate(-2deg);
-    display: inline-block;
+    font-size: 3.5rem;
+    color: var(--color-text-light);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
 }
 
 h2 {
     font-size: 2.2rem;
-    color: #4facfe;
     margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
 }
 
-p {
-    font-size: 1.15rem;
-    margin-bottom: 1rem;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
+h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: var(--color-secondary);
+    margin: 5px auto 0;
+    border-radius: 2px;
 }
 
 /* Layout */
@@ -72,56 +81,113 @@ a {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-}
-
-/* Header */
-header {
-    text-align: center;
-    padding: 3rem 0;
     position: relative;
     z-index: 2;
 }
 
-.header-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: var(--radius-blob);
-    box-shadow: var(--shadow-soft);
-    margin: 0 auto 2rem;
-    display: block;
-    border: 5px solid white;
-    transform: rotate(1deg);
-    transition: transform 0.3s;
-    animation: float 6s ease-in-out infinite;
-}
-
-.header-img:hover {
-    transform: rotate(-1deg) scale(1.02);
-}
-
-/* Cards */
-section {
-    background: var(--color-card-bg);
-    padding: 2.5rem;
-    border-radius: var(--radius-blob);
-    box-shadow: var(--shadow-soft);
-    margin-bottom: 3rem;
-    transform: translateY(30px);
-    opacity: 0;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    border: 4px solid white;
+/* Hero Header */
+.hero-header {
     position: relative;
+    height: 80vh;
+    /* Full viewport height or close to it */
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     overflow: hidden;
+    margin-bottom: 3rem;
+    border-bottom-left-radius: var(--radius-xl);
+    border-bottom-right-radius: var(--radius-xl);
+    box-shadow: var(--shadow-soft);
 }
 
-section::before {
-    content: '';
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    /* Centering */
+    z-index: 0;
+    object-fit: cover;
+    /* Ensures video covers area */
+
+    /* Fallback background image if video fails or for design */
+    background: url('../img/header_poster.jpg') no-repeat center center/cover;
+}
+
+/* GIF Background Alternative (CSS Overlay) 
+   To use this instead of video tag, add class 'hero-gif-bg' to .hero-header */
+.hero-header.hero-gif-bg {
+    background: url('../img/header_bg.gif') center center/cover no-repeat;
+}
+
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 8px;
-    background: linear-gradient(90deg, var(--color-accent-1), var(--color-accent-3));
+    height: 100%;
+    /* Gradient overlay for readability */
+    background: linear-gradient(to bottom,
+            rgba(142, 68, 173, 0.3),
+            rgba(155, 89, 182, 0.6));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    color: white;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #f3e5f5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
+    color: white;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+}
+
+/* Cards & Sections */
+section {
+    background: white;
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    margin-bottom: 3rem;
+
+    /* Animation Initial State */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 section.visible {
@@ -133,7 +199,7 @@ section.visible {
 .who-container {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
@@ -141,7 +207,17 @@ section.visible {
 .person-card {
     text-align: center;
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
+    background: #f8f0fc;
+    /* Very light lavender tint */
+    padding: 2rem;
+    border-radius: var(--radius-lg);
+    transition: transform 0.3s;
+}
+
+.person-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
 }
 
 .avatar {
@@ -151,138 +227,93 @@ section.visible {
     object-fit: cover;
     border: 5px solid white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin-bottom: 1rem;
 }
 
-.avatar:hover {
-    transform: scale(1.1) rotate(5deg);
-}
-
-/* List Styling */
+/* Program List */
 ul {
     list-style: none;
 }
 
 li {
-    background: white;
-    margin-bottom: 0.8rem;
-    padding: 1rem;
-    border-radius: 15px;
+    background: linear-gradient(to right, #ffffff, #fcf3ff);
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+    border-left: 5px solid var(--color-primary);
+    border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
     font-weight: 600;
-    transition: transform 0.2s;
+    transition: margin-left 0.3s;
 }
 
 li:hover {
-    transform: translateX(5px);
-    background: #fffdf9;
+    margin-left: 10px;
+    background: white;
 }
 
 li strong {
-    color: #ff6b6b;
-    margin-right: 0.5rem;
+    color: var(--color-primary-dark);
+    margin-right: 1rem;
     font-size: 1.2rem;
-}
-
-/* Forms & Inputs */
-input[type="text"] {
-    width: 100%;
-    padding: 1rem;
-    border: 3px solid #eee;
-    border-radius: 20px;
-    font-family: var(--font-body);
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    transition: all 0.3s;
-}
-
-input[type="text"]:focus {
-    outline: none;
-    border-color: var(--color-accent-3);
-    box-shadow: 0 0 0 4px rgba(161, 196, 253, 0.2);
-}
-
-button {
-    background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    font-family: var(--font-heading);
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
-    transition: transform 0.2s, box-shadow 0.2s;
-    width: 100%;
-}
-
-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
-}
-
-button:active {
-    transform: translateY(1px);
+    width: 80px;
+    /* Fixed width for alignment */
 }
 
 /* Nav */
 nav {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 nav a {
-    display: inline-block;
-    padding: 0.8rem 1.5rem;
-    margin: 0 0.5rem;
-    background: white;
-    border-radius: 30px;
+    color: var(--color-primary-dark);
     font-weight: 700;
-    color: #4facfe;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s;
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 5px;
 }
 
-nav a:hover {
-    background: #4facfe;
-    color: white;
-    transform: rotate(2deg);
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-secondary);
+    transition: width 0.3s;
 }
 
-/* Utilities */
-.hidden {
-    display: none !important;
+nav a:hover::after {
+    width: 100%;
 }
 
+/* Utility */
 .text-center {
     text-align: center;
 }
 
-/* Animations */
-@keyframes float {
-    0% {
-        transform: translateY(0px) rotate(1deg);
-    }
-
-    50% {
-        transform: translateY(-10px) rotate(1deg);
-    }
-
-    100% {
-        transform: translateY(0px) rotate(1deg);
-    }
+.hidden {
+    display: none !important;
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    .hero-header {
+        height: 60vh;
+    }
+
     h1 {
         font-size: 2.5rem;
     }
 
     .who-container {
-        flex-direction: column;
+        gap: 1.5rem;
     }
+
+    /* On mobile, maybe hide the video and show GIF/Image if video is heavy? 
+       For now, we keep responsive simple. */
 }

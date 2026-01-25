@@ -4,22 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toni & Laura - Finalmente! 🎉</title>
+    <title>Toni & Laura - Il Matrimonio 💜</title>
     <link rel="stylesheet" href="css/style.css">
-    <meta name="description" content="Toni e Laura si sposano! Dettagli su data, luogo e programma del matrimonio.">
+    <meta name="description"
+        content="Toni e Laura si sposano! Unisciti a noi per una giornata di festa, amore e divertimento.">
 </head>
 
 <body>
 
-    <div class="container">
-        <header>
-            <img src="img/header.png" alt="Just Married" class="header-img">
+    <!-- Hero Header with Background Video/GIF -->
+    <!-- Option 1: Animated GIF Background (Class on container) 
+         <header class="hero-header hero-gif-bg"> ... </header> -->
+
+    <!-- Option 2: HTML5 Video Background (Current Choice) -->
+    <header class="hero-header">
+        <!-- Video Element -->
+        <video class="hero-video" autoplay muted loop playsinline poster="img/header_poster.jpg">
+            <!-- Replace 'header_bg.mp4' with actual video path if available.
+                 Currently using a placeholder logic or the fallback poster. -->
+            <source src="img/header_bg.mp4" type="video/mp4">
+            <!-- Since we don't have a real mp4 yet, it will fall back to poster or we can use the gif as fallback in CSS -->
+        </video>
+
+        <!-- Gradient Overlay -->
+        <div class="hero-overlay"></div>
+
+        <!-- Content -->
+        <div class="hero-content">
             <h1>Ci sposiamo! 💍</h1>
-            <p>Sì, è vero. Non è uno scherzo.</p>
-        </header>
+            <p class="hero-subtitle">Finalmente. Sì, anche noi siamo sorpresi.</p>
+            <a href="#programma" class="btn-primary">Scopri il Piano 👇</a>
+        </div>
+    </header>
+
+    <div class="container">
 
         <section class="text-center">
-            <h2>� Chi siamo?</h2>
+            <h2>👫 Chi siamo?</h2>
             <div class="who-container">
                 <div class="person-card">
                     <img src="img/toni.jpg" alt="Toni" class="avatar">
@@ -37,17 +58,17 @@
         <section>
             <h2>📍 Dove & Quando</h2>
             <div style="text-align: center;">
-                <p>📅 <strong>23 Maggio 2026</strong></p>
-                <p>📍 <strong>Boh lo scopriremo insieme, Padova</strong></p>
-                <p style="font-size: 0.9rem; margin-top: 1rem;">(Non perdetevi, usate il GPS!)</p>
+                <p style="font-size: 1.3rem;">📅 <strong>23 Maggio 2026</strong></p>
+                <p style="font-size: 1.3rem;">📍 <strong>Boh lo scopriremo insieme</strong>, Padova</p>
+                <p style="font-size: 0.9rem; margin-top: 1rem; color: #666;">(Usate il GPS, non fidatevi di Toni)</p>
             </div>
         </section>
 
-        <section>
+        <section id="programma">
             <h2>🕒 Il Piano (circa)</h2>
             <ul>
                 <li><strong>10:30</strong> Cerimonia (puntuali, dai!)</li>
-                <li><strong>17:30</strong> Apericena </li>
+                <li><strong>17:30</strong> Apericena 🍹</li>
                 <li><strong>20:00</strong> Cazzeggio e balli imbarazzanti 🕺</li>
             </ul>
         </section>
@@ -56,11 +77,12 @@
             <h2>🎬 Trailer Epico</h2>
             <div
                 style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 20px; border: 4px solid #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
-                <!-- Placeholder for actual video ID -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UiMg566PREA?si=jXIgckJgNddS5gEu"
-                    title="Il Trailer Epico" frameborder="0"
+                <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+                    src="https://www.youtube.com/embed/UiMg566PREA?si=jXIgckJgNddS5gEu" title="Il Trailer Epico"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    allowfullscreen>
+                </iframe>
             </div>
         </section>
 
@@ -71,6 +93,16 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script>
+        // Additional snippet to handle Video/GIF fallback logic gracefully if needed
+        const video = document.querySelector('.hero-video');
+        video.addEventListener('error', function () {
+            // If video fails to load, the poster shows.
+            // Or we can programmatically switch to GIF class:
+            // document.querySelector('.hero-header').classList.add('hero-gif-bg');
+            // But since source is missing, it will use poster.
+        });
+    </script>
 </body>
 
 </html>

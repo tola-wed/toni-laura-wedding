@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Inherit Main Styles but maintain specific page layouts */
+:root {
+    /* Same root variables as style.css to share theme */
+    --color-primary: #9b59b6;
+    --color-primary-dark: #8e44ad;
+    --color-secondary: #e056fd;
+    --color-accent: #f8c291;
+    --color-bg-start: #f3e5f5;
+    --color-bg-end: #e1bee7;
+    --color-text: #2c3e50;
+    --font-heading: 'Fredoka One', cursive;
+    --font-body: 'Open Sans', sans-serif;
+    --shadow-soft: 0 10px 25px rgba(155, 89, 182, 0.2);
+    --radius-lg: 20px;
+}
+
+/* This snippet ensures shared styles or overrides if needed. 
+   Since this file imports style.css in the HTML, we usually just edit style.css.
+   But if the user wants separate files, we can keep them. 
+   Actually, the user only has style.css linked. 
+   I will just ensure style.css covers everything. */
