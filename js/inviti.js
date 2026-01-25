@@ -6,8 +6,9 @@ async function verificaCodice() {
     if (inviti[codice]) {
         document.getElementById("invito").classList.remove("hidden");
         document.getElementById("nome").textContent = inviti[codice].nome;
-        document.getElementById("posti").textContent = inviti[codice].posti;
         document.getElementById("messaggio").textContent = inviti[codice].messaggio;
+        document.getElementById("download").href = inviti[codice].file;
+        document.getElementById("download").style.display = "inline-block";
     } else {
         alert("Codice non valido 😢");
     }

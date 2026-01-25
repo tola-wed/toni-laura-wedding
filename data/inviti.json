@@ -1,12 +1,12 @@
 {
     "test123": {
         "nome": "Laura Scagnellato",
-        "posti": 1,
-        "messaggio": "Forse funziona"
+        "messaggio": "Forse funziona",
+        "file": "inviti/test.pdf"
     },
     "test456": {
         "nome": "Antonio Collesei",
-        "posti": 2,
-        "messaggio": "Due persone: funziona"
+        "messaggio": "Due persone: funziona",
+        "file": "inviti/test.pdf"
     }
 }
