@@ -36,17 +36,13 @@
             style="width: 100%; max-width: 600px; margin-top: 2rem; text-align: center; border: 3px dashed var(--color-primary);">
             <h2 style="margin-top: 0; color: var(--color-primary);">Ciao <span id="nome"></span>! 👋</h2>
 
-            <div style="background: rgba(155, 89, 182, 0.1); padding: 1.5rem; border-radius: 15px; margin: 1.5rem 0;">
-                <p>Sei ufficialmente dei nostri!</p>
-                <p style="font-size: 1.2rem; margin-top: 0.5rem;">Posti riservati: <strong><span id="posti"
-                            style="font-size: 2.5rem; color: var(--color-secondary);"></span></strong></p>
-            </div>
-
-            <p id="messaggio" style="font-style: italic; color: #555;"></p>
+            <p id="messaggio" style="font-style: italic; color: #555; font-size: 1.2rem; margin: 2rem 0;"></p>
 
             <div style="margin-top: 2rem;">
-                <button onclick="window.print()" class="btn-primary"
-                    style="font-size: 0.9rem; padding: 0.8rem 2rem;">🖨️ Stampa Memento</button>
+                <a id="download" href="#" class="btn-primary" download
+                    style="display: none; text-decoration: none; padding: 1rem 2rem;">
+                    � Scarica il tuo Invito
+                </a>
             </div>
         </section>
 
