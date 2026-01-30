@@ -8,5 +8,35 @@
         "nome": "Bomber",
         "messaggio": "Sapevo che ci avresti provato",
         "file": "inviti/robertonepiccoli91.jpg"
+    },
+    "falesia19": {
+        "nome": "Alessandro Paglialunga",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/paglia.mp4"
+    },
+    "comemai90": {
+        "nome": "Marco Tramarin",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/trama.mp4"
+    },
+    "troppecase3": {
+        "nome": "Alberto Scala",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/albiscala.mp4"
+    },
+    "sugardaddy5": {
+        "nome": "Marco Baldi",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/marcobaldi.mp4"
+    },
+    "imax4k": {
+        "nome": "Alessandro Malaguti",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/mala.mp4"
+    },
+    "marsala1000": {
+        "nome": "Francesco Millevoi",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/cecio.mp4"
     }
 }
