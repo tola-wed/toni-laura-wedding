@@ -195,5 +195,13 @@
     "obiettivo42": {
         "nome": "Linda Zinesi",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/linda.mp4"}
+        "file": "inviti/linda.mp4"},
+    "legaliart": {
+        "nome": "Lucia Comisso",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/luciacomisso.mp4"},
+    "legalilaugh": {
+        "nome": "Maddalena Valli",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/maddivalli.mp4"}
     }
