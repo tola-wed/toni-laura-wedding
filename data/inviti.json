@@ -191,5 +191,9 @@
     "tumefatti7": {
         "nome": "Beatrice Moccaldi",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/beatricemoccaldi.mp4"}
+        "file": "inviti/beatricemoccaldi.mp4"},
+    "obiettivo42": {
+        "nome": "Linda Zinesi",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/linda.mp4"}
     }
