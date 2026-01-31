@@ -87,7 +87,7 @@
     "harrypottere2gattini": {
         "nome": "Carla e Damiano",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/carladamiano.mp4"
+        "file": "inviti/CarlaDamiano.mp4"
     },
     "vutobevareancati": {
         "nome": "Michi e Robi",
@@ -117,7 +117,7 @@
     "cervicali85": {
         "nome": "Mariagrazia Lorenzin",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/mariagrazia.mp4"
+        "file": "inviti/mariagrazialorenzin.mp4"
     },
     "professoressa1": {
         "nome": "Roberta Ramonda",
@@ -148,5 +148,48 @@
         "nome": "Angela & Matt",
         "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
         "file": "inviti/angelamatt.mp4"
+    }, 
+     "friendsfromabroad1": {
+        "nome": "Lilli & Peter",
+        "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
+        "file": "inviti/lilligiustevepeter.mp4"
+}, 
+     "friendsfromabroad2": {
+        "nome": "Giulia & Steve",
+        "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
+        "file": "inviti/lilligiustevepeter.mp4"
+},  
+     "tumefatti1": {
+        "nome": "Claudio Cruciani",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/claudiocruciani.mp4"
+         },  
+     "tumefatti2": {
+        "nome": "Filippo Vesentini",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/filippovesentini.mp4"},
+    "tumefatti3": {
+        "nome": "Luca Iorio",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/lucadriorio.mp4"},
+    "tumefatti4": {
+        "nome": "Federico Arru",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/fedearru.mp4"},
+    "tumefatti5": {
+        "nome": "Mariangela Salvato",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/mariangelasalavato.mp4"},
+    "tumefatti6": {
+        "nome": "",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/annagamba.mp4"},
+     "tumefatti7": {
+        "nome": "Beatrice Moccaldi",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/beatricemoccaldi.mp4"},
+    "tumefatti7": {
+        "nome": "Beatrice Moccaldi",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/beatricemoccaldi.mp4"}
     }
-}
