@@ -77,66 +77,76 @@
     "thosetwo4": {
         "nome": "Mariana & Adriano",
         "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
-        "file": "inviti/marianaandAdriano.mp4"
+        "file": "inviti/adrianomariana.mp4"
     },
     "ortoegattini": {
         "nome": "Renzo e Nadia",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/zioRenzoeziaNadia.mp4"
+        "file": "inviti/renzonadia.mp4"
     },
     "harrypottere2gattini": {
         "nome": "Carla e Damiano",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/CarlaDamiano.mp4"
+        "file": "inviti/carladamiano.mp4"
     },
     "vutobevareancati": {
         "nome": "Michi e Robi",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/ZiaMichiezioRobi.mp4"
+        "file": "inviti/michirobi.mp4"
     },
     "eilsalamedove6": {
         "nome": "Lidia e Sergio",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/ziaLidiaeSergio.mp4"
+        "file": "inviti/lidiasergio.mp4"
     },
     "jannick15love": {
         "nome": "Benedetta Bortolatto",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/Benni.mp4"
+        "file": "inviti/benni.mp4"
     },
     "sgrumoefumo": {
         "nome": "Filippo Varotto",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/PippoVarotto.mp4"
+        "file": "inviti/pippovarotto.mp4"
     },
     "jesuissselaura95": {
         "nome": "Enrico e Betti",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/EnricoeBetti.mp4"
+        "file": "inviti/enricobetti.mp4"
     },
     "cervicali85": {
         "nome": "Mariagrazia Lorenzin",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/Mariagrazia.mp4"
+        "file": "inviti/mariagrazia.mp4"
     },
     "professoressa1": {
         "nome": "Roberta Ramonda",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/Ramonda.mp4"
+        "file": "inviti/robertaramonda.mp4"
     },
     "scialpinismo": {
         "nome": "Nicola e Lisa",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/NicolaLisa.mp4"
+        "file": "inviti/nicolalisa.mp4"
     },
     "arcellaaiuto": {
         "nome": "Renzo e Cristina",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/RenzoCristina.mp4"
+        "file": "inviti/renzocristina.mp4"
     },
     "motocicletta": {
         "nome": "Giampiero e Paola",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/GiampieroPaola.mp4"
+        "file": "inviti/giampieropaola.mp4"
+    },
+    "cikeciak26": {
+        "nome": "Pierangela Palmerini",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/pippi.mp4"
+    },
+    "sftopd26": {
+        "nome": "Angela & Matt",
+        "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
+        "file": "inviti/angelamatt.mp4"
     }
 }
