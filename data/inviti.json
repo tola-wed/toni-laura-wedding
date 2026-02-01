@@ -248,5 +248,10 @@
         "nome": "Sara Bindoli",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/sarabindoli.mp4"
+    }, 
+    "fuckthebritish": {
+        "nome": "Elena Clo",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/elenaclo.mp4"
     }
 }
