@@ -228,5 +228,15 @@
         "nome": "Medina Veliu",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/meddi.mp4"
+    }, 
+    "italianpatisserie": {
+        "nome": "Luca ed Hélène",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/lucahelene_def.mp4"
+    }, 
+    "silmax0102": {
+        "nome": "Silvia e Massimo",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/silviamassimo.mp4"
     }
 }
