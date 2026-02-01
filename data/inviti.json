@@ -238,5 +238,15 @@
         "nome": "Silvia e Massimo",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/silviamassimo.mp4"
+    }, 
+    "siamofusi": {
+        "nome": "Giacomo Cozzi",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/giacomocozzi.mp4"
+    }, 
+    "breakthelaw007": {
+        "nome": "Sara Bindoli",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/sarabindoli.mp4"
     }
 }
