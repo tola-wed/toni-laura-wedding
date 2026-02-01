@@ -253,5 +253,10 @@
         "nome": "Elena Clo",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/elenaclo.mp4"
+    }, 
+    "malandrini": {
+        "nome": "Elena Clo",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/ugisilvia-def.mp4"
     }
 }
