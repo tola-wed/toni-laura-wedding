@@ -208,5 +208,25 @@
         "nome": "Maddalena Valli",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/maddivalli.mp4"
+    }, 
+    "bluautunno": {
+        "nome": "Francesca Pastò",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/frapasto.mp4"
+    }, 
+    "blufreschi": {
+        "nome": "Sofia Fioretto",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/fiore.mp4"
+    }, 
+    "bluinverno": {
+        "nome": "Elena Bogana",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/bughi.mp4"
+    }, 
+    "sarindiano": {
+        "nome": "Medina Veliu",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/meddi.mp4"
     }
 }
