@@ -254,11 +254,6 @@
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/sarabindoli.mp4"
     },
-    "fuckthebritish": {
-        "nome": "Elena Clo'",
-        "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/elenaclo.mp4"
-    },
     "malandrini": {
         "nome": "Ugi & Silvia",
         "messaggio": "Conserva questo invito per accedere all'evento",
@@ -298,5 +293,20 @@
         "nome": "Sara Giustinelli",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/saragiustinelli.mp4"
+    },
+    "baiocchi4life": {
+        "nome": "Enrico Busetto",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/enribus.mp4"
+    },
+    "fuckthebritish": {
+        "nome": "Elena Clo'",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/elenaclo.mp4"
+    },
+    "truzzo4ever": {
+        "nome": "Umberto Maggioni",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/umbo.mp4"
     }
 }
