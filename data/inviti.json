@@ -308,5 +308,20 @@
         "nome": "Umberto Maggioni",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/umbo.mp4"
+    },
+    "catalicammello": {
+        "nome": "Martina Guidolin",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/martinaguidolin.mp4"
+    },
+    "cleliachefacose": {
+        "nome": "Clelia Ceccaroni",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/cleliaceccaroni.mp4"
+    },
+    "flautista2011": {
+        "nome": "Anna Ceccato",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/annaceccato.mp4"
     }
 }
