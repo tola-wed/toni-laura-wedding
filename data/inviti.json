@@ -323,5 +323,10 @@
         "nome": "Anna Ceccato",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/annaceccato.mp4"
+    },
+    "naxos4life": {
+        "nome": "Nicolas Bianco",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/nicowhite.mp4"
     }
 }
