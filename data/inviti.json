@@ -353,5 +353,15 @@
         "nome": "Penn Ryan",
         "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
         "file": "inviti/pennryan.mp4"
+    },
+    "bestpaper4wemby": {
+        "nome": "Dario Simionato",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/dariosim.mp4"
+    },
+    "stretchingestremo": {
+        "nome": "Paola Donolato",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/paoladonolato.mp4"
     }
 }
