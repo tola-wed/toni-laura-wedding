@@ -328,28 +328,30 @@
         "nome": "Nicolas Bianco",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/nicowhite.mp4"
-    }, 
+    },
     "cielidirlanda": {
         "nome": "Teresa Mozzato",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/Terri.mp4"
-}, 
+    },
     "cielitedeschi": {
         "nome": "Clara De Angelis",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/claradeangelis.mp4"
-}, 
+    },
     "zianives": {
         "nome": "Nives Collesei",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/nives.mp4"
-},   "cousins": {
-        "nome": "Mattia e Beatrice",
+    },
+    "cousins": {
+        "nome": "Mattia & Beatrice",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/mattiabeatrice.mp4"
-    },   "allpress&sodas": {
+    },
+    "allpress&sodas": {
         "nome": "Penn Ryan",
-        "messaggio": "Conserva questo invito per accedere all'evento",
+        "messaggio": "Enjoy this digital invitation (and hopefully the party, too)",
         "file": "inviti/pennryan.mp4"
     }
-    }
+}
