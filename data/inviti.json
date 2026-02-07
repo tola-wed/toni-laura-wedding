@@ -363,5 +363,15 @@
         "nome": "Paola Donolato",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/paoladonolato.mp4"
+    },
+    "aifornelli!": {
+        "nome": "Giulia e Claudio",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/giuliaclaudio.mp4"
+    },
+    "supeimonti": {
+        "nome": "Giulia e Marco",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/marco.mp4"
     }
 }
