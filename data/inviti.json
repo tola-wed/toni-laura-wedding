@@ -373,5 +373,10 @@
         "nome": "Marco",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/marco.mp4"
+    },
+    "viazacco12": {
+        "nome": "Cinzia e Italo",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/cinziaitalo.mp4"
     }
 }
