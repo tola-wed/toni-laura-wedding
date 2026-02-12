@@ -112,7 +112,7 @@
     "sgrumoefumo": {
         "nome": "Filippo Varotto",
         "messaggio": "Conserva questo invito per accedere all'evento",
-        "file": "inviti/pippovarotto.mp4"
+        "file": "inviti/filippovarotto.mp4"
     },
     "jesuissselaura95": {
         "nome": "Enrico e Betti",
@@ -378,5 +378,10 @@
         "nome": "Cinzia e Italo",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/3_cinziaitalo.mp4"
+    },
+    "miaohouse": {
+        "nome": "Armando",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/armandobughi.mp4"
     }
 }
