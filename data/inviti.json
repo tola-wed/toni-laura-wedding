@@ -359,7 +359,7 @@
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/dariosim.mp4"
     },
-    "stretchingestremo": {
+    "cerchioestremo": {
         "nome": "Paola Donolato",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/paoladonolato.mp4"
@@ -383,5 +383,10 @@
         "nome": "Armando",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/armandobughi.mp4"
+    },
+    "bbqexpert": {
+        "nome": "Ilie Sarpe",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/iliesarpe.mp4"
     }
 }
