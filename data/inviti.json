@@ -393,5 +393,10 @@
         "nome": "Ilie Sarpe",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/iliesarpe.mp4"
+    },
+    "turing1950": {
+        "nome": "Fabio Vandin",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/fabio.mp4"
     }
 }
