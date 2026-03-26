@@ -398,5 +398,10 @@
         "nome": "Fabio Vandin",
         "messaggio": "Conserva questo invito per accedere all'evento",
         "file": "inviti/fabio.mp4"
+    },
+    "oroscopo16": {
+        "nome": "Caterina Favaretti",
+        "messaggio": "Conserva questo invito per accedere all'evento",
+        "file": "inviti/catefavaretti.mp4"
     }
 }
